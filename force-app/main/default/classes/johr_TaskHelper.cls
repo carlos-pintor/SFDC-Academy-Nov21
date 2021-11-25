@@ -6,9 +6,9 @@
     public static List<Task> tar(List<ID> ids,String subject_task, Date date_task){
         //declaro la lista de tareas que se va a retornar y Task para ir insertando por separado a la lista
        List<Task> t = new List<Task>();
-       Task tareas = new Task();
        
        for(Id i : ids){
+           Task tareas = new Task();
            tareas.WhatId = i;
            tareas.Subject = subject_task;
            tareas.ActivityDate = date_task;
