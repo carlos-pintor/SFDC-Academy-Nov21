@@ -6,3 +6,7 @@
 //     SFDX: Execute Anonymous Apex with Editor Contents
 
 CAPS_MonthsClass.getMonthNames();
+
+Map<Integer, String> mapa = CAPS_MonthsClass.getMonthsMap();
+System.debug('Map > Mes:' + mapa.get(1));
+System.debug('Map > Mes:' + mapa.get(13));
