@@ -12,6 +12,7 @@ public with sharing class CAPS_ContactHelper {
      * @param company Company name to create an account with
      * @return The contact created
      */
+    @AuraEnabled
     public static Contact createAccountContact(String firstName, String lastName, String company) {
         Account acc = new Account();
         acc.Name = company;

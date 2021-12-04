@@ -1,0 +1,19 @@
+<template>
+  <lightning-card title="New contact" icon-name="standard:contact">
+      <lightning-layout multiple-rows="true">
+          <lightning-layout-item size="6" padding="around-small">
+              <lightning-input name="firstName" type="text" label="First Name" onchange={handleChange}></lightning-input>
+          </lightning-layout-item>
+          <lightning-layout-item size="6" padding="around-small">
+              <lightning-input name="lastName" type="text" label="Last Name" onchange={handleChange}></lightning-input>
+          </lightning-layout-item>
+          <lightning-layout-item size="6" padding="around-small">
+              <lightning-input name="companyName" type="text" label="Company name" onchange={handleChange}></lightning-input>
+          </lightning-layout-item>
+      </lightning-layout>
+      <div slot="footer">
+          <lightning-button label="Cancel" title="Cancel" onclick={handleCancel} ></lightning-button>
+          <lightning-button variant="brand" label="Save" title="Save" onclick={handleSave} class="slds-m-left_x-small" ></lightning-button>
+      </div>
+  </lightning-card>
+</template>
